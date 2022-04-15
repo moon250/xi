@@ -1,16 +1,5 @@
 <template>
-  <header>
-    <nav class="links">
-      <ul>
-        <li>About me</li>
-        <li>Skills</li>
-        <li>Projects</li>
-      </ul>
-      <svg class="burger-menu">
-        <use xlink:href="sprite.svg#menu"></use>
-      </svg>
-    </nav>
-  </header>
+  <Header/>
   <main>
     <svg class="logo">
       <use xlink:href="sprite.svg#logo"></use>
@@ -27,5 +16,16 @@
       </svg>
     </div>
   </main>
-  <footer></footer>
+  <Footer/>
 </template>
+<script>
+import Footer from "./components/Footer.vue";
+import Header from "./components/Header.vue";
+
+export default {
+  components: {
+    Header: Header,
+    Footer: Footer
+  }
+};
+</script>
