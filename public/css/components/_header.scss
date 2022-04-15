@@ -1,0 +1,24 @@
+header {
+  margin-top: 24px;
+  margin-left: 32px;
+  margin-right: 24px;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links ul {
+  display: flex;
+}
+
+.links ul li {
+  margin-right: 16px;
+}
+
+.burger-menu {
+  height: 32px;
+  width: 32px;
+}

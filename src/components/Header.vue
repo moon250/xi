@@ -6,9 +6,11 @@
         <li>Skills</li>
         <li>Projects</li>
       </ul>
-      <svg class="burger-menu">
-        <use xlink:href="sprite.svg#menu"></use>
-      </svg>
+      <Icon name="menu" :icon-class="false" class="burger-menu"/>
     </nav>
   </header>
 </template>
+
+<script setup>
+import Icon from "./Icon.vue";
+</script>

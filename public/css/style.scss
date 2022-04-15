@@ -1,0 +1,30 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+@import "reset";
+@import "functions";
+@import "typography";
+
+:root {
+  --light: #F9F9F9;
+  --dark: #191A20;
+  --primary: var(--light);
+  --secondary: var(--dark);
+  --space: 8px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: var(--primary);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+}
+
+@import "utilites";
+
+@import "components/header";
+@import "components/icons";
+@import "components/logo";
