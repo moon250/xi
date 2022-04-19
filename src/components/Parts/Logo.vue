@@ -14,7 +14,7 @@
 </template>
 
 <script setup>
-import Icon from "./Icon.vue";
+import Icon from "../Icon.vue";
 
 const copy = async function () {
   await navigator.clipboard.writeText("moon250#4604");
