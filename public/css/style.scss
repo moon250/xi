@@ -17,7 +17,7 @@
 body {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
   background: var(--primary);
   font-family: 'Montserrat', sans-serif;
   font-size: 15px;
@@ -29,3 +29,6 @@ body {
 @import "components/icons";
 @import "components/logo";
 @import "components/projects";
+@import "components/skills";
+@import "components/dropdown";
+@import "components/pill";

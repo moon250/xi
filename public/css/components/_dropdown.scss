@@ -1,0 +1,53 @@
+.dropdown__main {
+  display: flex;
+}
+
+.dropdown__icon {
+  width: 24px;
+  height: 24px;
+}
+
+.dropdown__description {
+  margin-bottom: space(1);
+}
+
+.dropdown__header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: space(1);
+}
+
+.dropdown__right {
+  margin-left: space(1);
+  flex: 1;
+}
+
+.dropdown__level {
+  display: flex;
+  align-items: center;
+  margin-bottom: space(1);
+
+  & h3 {
+    margin-right: space(2);
+  }
+
+  & .pill {
+    margin-right: space(1);
+  }
+}
+
+.dropdown__technologies {
+  display: flex;
+  align-items: center;
+
+  & h3 {
+    margin-right: space(1);
+  }
+}
+
+.dropdown__header-arrow {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}

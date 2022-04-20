@@ -1,0 +1,54 @@
+.skills__icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: space(3);
+
+  & > * {
+    cursor: pointer;
+  }
+}
+
+.skills__icons svg {
+  height: 40px;
+  width: 40px;
+}
+
+.skills__icons :not(:first-child),
+.skills__icons :not(:last-child) {
+  margin: 0 space(1);
+}
+
+.skills__icons :not(:first-child) {
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 1.5px;
+    height: 32px;
+
+    background-color: var(--secondary);
+
+    position: absolute;
+    top: 50%;
+    left: -9px;
+    transform: translateY(-50%);
+  }
+}
+
+.skills__icon-active {
+  position: relative;
+
+  &::after {
+    content: "";
+    height: 1.5px;
+    width: 32px;
+
+    background-color: var(--secondary);
+
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
