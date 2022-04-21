@@ -32,7 +32,7 @@
         ]
       }
     },
-    "software": {
+    "tools": {
       "git": {
         "name": "Git",
         "description": "Git is a version control system",

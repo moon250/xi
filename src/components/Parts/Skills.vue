@@ -10,10 +10,10 @@
           <Icon :name="rawName" :alt="language.name" :icon-class="false"/>
         </div>
       </div>
-      <Dropdown type="languages" v-if="opennedDropdown !== ''" :reference="opennedDropdown"
+      <Dropdown v-if="opennedDropdown !== ''" :content="getContent(opennedDropdown, 'languages')"
                 @close-dropdown="opennedDropdown = ''"/>
     </div>
-    <div class="skills__software"></div>
+    <div class="skills__tools"></div>
   </div>
 </template>
 
@@ -24,4 +24,9 @@ import Dropdown from "../Dropdown.vue";
 import { ref } from "vue";
 
 const opennedDropdown = ref("");
+const getContent = function (name, type) {
+  const skill = skills[type][name];
+  skill.rawName = name;
+  return skill;
+};
 </script>
