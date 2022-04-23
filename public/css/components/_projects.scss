@@ -41,7 +41,7 @@
     transition: opacity .2s;
   }
 
-  &:hover {
+  &:hover, &:active {
     .project__description {
       opacity: 1;
     }
