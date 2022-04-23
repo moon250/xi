@@ -17,7 +17,7 @@
       </div>
       <div class="dropdown__technologies" v-if="content.hasOwnProperty('technologies')">
         <h3>Technologies I use :</h3>
-        <Icon v-for="technology in content.technologies" :name="technology"/>
+        <Icon v-for="(technology, name) in content.technologies" :name="name" :link="technology.link"/>
       </div>
     </div>
   </div>

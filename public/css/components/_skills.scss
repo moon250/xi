@@ -1,3 +1,5 @@
+@use "../functions" as *;
+
 .skills__icons {
   display: flex;
   justify-content: center;
@@ -7,6 +9,18 @@
   & > * {
     cursor: pointer;
   }
+}
+
+.skills__icons-unselected .skills__icon {
+  --icon-color: var(--secondary);
+}
+
+.skills__icon-active {
+  --icon-color: var(--secondary);
+}
+
+.skills__icon {
+  --icon-color: rgba(var(--rgb-secondary), 0.5);
 }
 
 .skills__icons svg {
@@ -41,7 +55,7 @@
 
   &::after {
     content: "";
-    height: 1.5px;
+    height: 2px;
     width: 32px;
 
     background-color: var(--secondary);
