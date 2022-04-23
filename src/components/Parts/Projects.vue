@@ -5,7 +5,7 @@
       <div class="project__item" v-for="project in projects">
         <img :src="'/img/' + project.thumbnail" :alt="project.name">
         <div class="project__description">
-          <h3>{{ project.name }}</h3>
+          <h2>{{ project.name }}</h2>
           <p>
             {{ project.description }}
           </p>

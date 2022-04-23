@@ -2,20 +2,6 @@
   fill: var(--secondary);
 }
 
-.socials {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  align-self: flex-end;
-  margin-right: space(2);
-  min-width: 85px;
-
-  & :first-child {
-    height: 28px;
-    width: 28px;
-  }
-}
-
 .logo__main {
   width: 100%;
   display: flex;

@@ -10,26 +10,34 @@
         "name": "CSS",
         "description": "The CSS is a language used to make the style of web pages",
         "level": 2,
-        "technologies": [
-          "sass"
-        ]
+        "technologies": {
+          "sass": {
+            "link": "https://sass-lang.com/"
+          }
+        }
       },
       "javascript": {
         "name": "Javascript",
         "description": "Javascript is a language used to make web pages interactive",
         "level": 2,
-        "technologies": [
-          "nodejs",
-          "vuejs"
-        ]
+        "technologies": {
+          "nodejs": {
+            "link": "https://nodejs.org/"
+          },
+          "vuejs": {
+            "link": "https://vuejs.org/"
+          }
+        }
       },
       "php": {
         "name": "PHP",
         "description": "PHP is a backend language",
         "level": 3,
-        "technologies": [
-          "laravel"
-        ]
+        "technologies": {
+          "laravel": {
+            "link": "https://laravel.com/"
+          }
+        }
       }
     },
     "tools": {
@@ -37,17 +45,21 @@
         "name": "Git",
         "description": "Git is a version control system",
         "level": 3,
-        "technologies": [
-          "git"
-        ]
+        "technologies": {
+          "git": {
+            "link": "https://git-scm.com/"
+          }
+        }
       },
       "docker": {
         "name": "Docker",
         "description": "Docker is a tool that helps you to create and manage containers",
         "level": 2,
-        "technologies": [
-          "docker"
-        ]
+        "technologies": {
+          "docker": {
+            "link": "https://www.docker.com/"
+          }
+        }
       }
     }
   }

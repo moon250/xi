@@ -1,13 +1,15 @@
+@use "../functions" as *;
+
 .project__item {
-  display: grid;
-  place-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 170px;
   position: relative;
-  margin-bottom: space(4);
   padding: space(4);
 
   & p {
-    font-size: 14px;
+    font-size: 16px;
     text-align: center;
     max-width: 170px;
   }
@@ -75,7 +77,9 @@
 }
 
 .project__list {
-  width: 240px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 240px);
+  gap: space(6);
 }
 
 .project__thumb {

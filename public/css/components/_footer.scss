@@ -1,0 +1,20 @@
+footer {
+  font-size: 13px;
+  line-height: 1;
+
+  margin: 0 space(3) space(3);
+
+  & > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  & .socials {
+    margin-right: 0;
+
+    & > svg {
+      margin-left: 0;
+    }
+  }
+}

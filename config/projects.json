@@ -9,11 +9,6 @@
       "name": "Portfolio",
       "thumbnail": "portfolio.png",
       "description": "This is the current website you are on. This is my own portfolio, that I have designed and created."
-    },
-    "monody1": {
-      "name": "Monody",
-      "thumbnail": "monody.png",
-      "description": "Monody is an online werewolf game in development."
     }
   }
 }
