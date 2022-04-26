@@ -14,4 +14,8 @@ header {
     justify-content: space-between;
     width: 210px;
   }
+
+  & ul > li {
+    cursor: pointer;
+  }
 }

@@ -2,15 +2,23 @@
   <header>
     <nav class="links">
       <ul>
-        <li>About me</li>
-        <li>Skills</li>
-        <li>Projects</li>
+        <li @click="scrollTo('about-me')">About me</li>
+        <li @click="scrollTo('skills')">Skills</li>
+        <li @click="scrollTo('projects')">Projects</li>
       </ul>
-      <Icon name="menu" :icon-class="false" class="burger-menu"/>
+      <BurgerMenu/>
     </nav>
   </header>
 </template>
 
 <script setup>
-import Icon from "../Icon.vue";
+import BurgerMenu from "../BurgerMenu.vue";
+
+function scrollTo (part) {
+  part = document.querySelector(`#${part}`);
+  part.scrollIntoView({
+    behavior: "smooth",
+    inline: "nearest"
+  });
+}
 </script>
