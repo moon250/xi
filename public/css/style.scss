@@ -22,6 +22,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   background: var(--primary);
+  color: var(--secondary);
 }
 
 @import "typography";
