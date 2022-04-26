@@ -29,7 +29,7 @@
 
 .burger-menu__links {
   display: grid;
-  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
   gap: space(1);
   margin-top: space(6);
   margin-left: space(4);
@@ -47,8 +47,10 @@
 }
 
 .burger-menu__actions {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+  justify-items: end;
   margin-top: space(3);
   margin-right: space(3);
 }

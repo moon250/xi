@@ -10,8 +10,8 @@
       </ul>
       <div class="burger-menu__actions">
         <Icon name="cross" :icon-class="false" class="burger-menu__close" @click="closeMenu"/>
-        <LangSwitcher/>
         <ThemeSwitcher/>
+        <LangSwitcher/>
       </div>
     </div>
     <Footer/>
