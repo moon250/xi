@@ -1,5 +1,5 @@
 <template>
-  <div class="about-me__main part">
+  <div class="about-me__main part" id="about-me">
     <h1>About me</h1>
     <p>
       Hi👋🏼 ! I am Robin, AKA moon250. I am a 15-year-old highschool student whose hobbies are web

@@ -1,5 +1,5 @@
 <template>
-  <div class="projects__main part">
+  <div class="projects__main part" id="projects">
     <h1>Projects</h1>
     <div class="project__list">
       <div class="project__item" v-for="project in projects">

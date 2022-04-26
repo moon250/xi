@@ -1,5 +1,5 @@
 <template>
-  <div class="skills__main part">
+  <div class="skills__main part"  id="skills">
     <h1>Skills</h1>
     <div class="skills__languages">
       <div class="skills__icons" :class="{'skills__icons-unselected': notAnySelected}">
