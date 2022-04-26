@@ -1,22 +1,17 @@
 header {
   margin-top: space(3);
   margin-left: space(3);
-  margin-right: space(3);
+  margin-right: space(2);
 }
 
 .links {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
 
-.links ul {
-  display: flex;
-  justify-content: space-between;
-  width: 200px;
-}
-
-.burger-menu {
-  height: 32px;
-  width: 32px;
+  & > ul {
+    display: flex;
+    justify-content: space-between;
+    width: 210px;
+  }
 }
