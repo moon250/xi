@@ -47,6 +47,8 @@
 }
 
 .burger-menu__actions {
+  display: flex;
+  flex-direction: column;
   margin-top: space(3);
   margin-right: space(3);
 }
