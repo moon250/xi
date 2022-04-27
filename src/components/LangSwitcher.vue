@@ -13,6 +13,7 @@ const langs = [
 ];
 
 function switchLanguage () {
+  $i18n.locale = langs[currentLang];
   currentLang.value = currentLang.value + 1 < langs.length ? currentLang.value + 1 : currentLang.value - 1;
 }
 </script>

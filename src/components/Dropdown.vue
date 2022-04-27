@@ -7,13 +7,13 @@
         <Icon name="arrow" :icon-class="false" class="dropdown__header-arrow" @click="$emit('close-dropdown')"/>
       </div>
       <div class="dropdown__level" v-if="content.hasOwnProperty('level')">
-        <h3>Level :</h3>
+        <h3>{{ $t("texts.level") }} :</h3>
         <Pill :checked="content.level - 1 >= 0"/>
         <Pill :checked="content.level - 2 >= 0"/>
         <Pill :checked="content.level - 3 >= 0"/>
       </div>
       <div class="dropdown__technologies" v-if="content.hasOwnProperty('technologies')">
-        <h3>Technologies I use :</h3>
+        <h3>{{ $t("texts.technos") }} :</h3>
         <Icon v-for="(technology, name) in content.technologies" :name="name" :link="technology.link"/>
       </div>
     </div>

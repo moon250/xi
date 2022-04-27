@@ -1,13 +1,13 @@
 <template>
   <div class="projects__main part" id="projects">
-    <h1>Projects</h1>
+    <h1>{{ $t("titles.projects") }}</h1>
     <div class="project__list">
       <div class="project__item" v-for="project in projects">
         <img :src="'/img/' + project.thumbnail" :alt="project.name">
         <div class="project__description">
           <h2>{{ project.name }}</h2>
           <p>
-            {{ project.description }}
+            {{ $t(project.description) }}
           </p>
         </div>
       </div>
@@ -16,5 +16,5 @@
 </template>
 
 <script setup>
-import { projects } from "../../../config/projects.json";
+import { projects } from "../../content/projects.json";
 </script>

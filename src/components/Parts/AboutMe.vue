@@ -1,10 +1,9 @@
 <template>
   <div class="about-me__main part" id="about-me">
-    <h1>About me</h1>
-    <p>
-      Hi👋🏼 ! I am Robin, AKA moon250. I am a 15-year-old highschool student whose hobbies are web
-      development and anything that revolves around computers in general.
-      Therefore, I hope I'll study computer science in the future
-    </p>
+    <h1>{{ $t("titles.aboutme") }}</h1>
+    <p>{{ $t("descriptions.me", [age]) }}</p>
   </div>
 </template>
+<script setup>
+const age = new Date(Date.now() - new Date("01/11/2006")).getFullYear() - 1970;
+</script>

@@ -1,6 +1,6 @@
 <template>
-  <div class="skills__main part"  id="skills">
-    <h1>Skills</h1>
+  <div class="skills__main part" id="skills">
+    <h1>{{ $t("titles.skills") }}</h1>
     <div class="skills__languages">
       <div class="skills__icons" :class="{'skills__icons-unselected': notAnySelected}">
         <div v-for="(language, rawName) in skills.languages"
@@ -20,7 +20,7 @@
 </template>
 
 <script setup>
-import { skills } from "../../../config/skills.json";
+import { skills } from "../../content/skills.json";
 import Icon from "../Icon.vue";
 import Dropdown from "../Dropdown.vue";
 import { ref } from "vue";
