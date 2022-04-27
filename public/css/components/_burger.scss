@@ -38,6 +38,10 @@
     font-size: 20px;
     cursor: pointer;
   }
+
+  & li:hover {
+    text-decoration: underline;
+  }
 }
 
 .burger-menu__close {

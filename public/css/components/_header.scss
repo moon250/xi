@@ -15,7 +15,11 @@ header {
     width: 210px;
   }
 
-  & ul > li {
+  & > ul > li {
     cursor: pointer;
+  }
+
+  & > ul > li:hover {
+    text-decoration: underline;
   }
 }
