@@ -5,17 +5,14 @@
 .dropdown__icon {
   width: 24px;
   height: 24px;
-}
-
-.dropdown__description {
-  margin-bottom: space(1);
+  --icon-color: var(--secondary);
 }
 
 .dropdown__header {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin-bottom: space(1);
+  margin-bottom: space(2);
 }
 
 .dropdown__right {

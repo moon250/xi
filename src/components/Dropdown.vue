@@ -6,9 +6,6 @@
         <h2>{{ content.name }}</h2>
         <Icon name="arrow" :icon-class="false" class="dropdown__header-arrow" @click="$emit('close-dropdown')"/>
       </div>
-      <p class="dropdown__description">
-        {{ content.description }}
-      </p>
       <div class="dropdown__level" v-if="content.hasOwnProperty('level')">
         <h3>Level :</h3>
         <Pill :checked="content.level - 1 >= 0"/>

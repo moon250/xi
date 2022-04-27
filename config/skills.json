@@ -3,12 +3,10 @@
     "languages": {
       "html": {
         "name": "HTML",
-        "description": "The HTML is a language used to create skeletons of web pages",
         "level": 3
       },
       "css": {
         "name": "CSS",
-        "description": "The CSS is a language used to make the style of web pages",
         "level": 2,
         "technologies": {
           "sass": {
@@ -18,7 +16,6 @@
       },
       "javascript": {
         "name": "Javascript",
-        "description": "Javascript is a language used to make web pages interactive",
         "level": 2,
         "technologies": {
           "nodejs": {
@@ -31,7 +28,6 @@
       },
       "php": {
         "name": "PHP",
-        "description": "PHP is a backend language",
         "level": 3,
         "technologies": {
           "laravel": {
@@ -43,7 +39,6 @@
     "tools": {
       "git": {
         "name": "Git",
-        "description": "Git is a version control system",
         "level": 3,
         "technologies": {
           "git": {
@@ -53,7 +48,6 @@
       },
       "docker": {
         "name": "Docker",
-        "description": "Docker is a tool that helps you to create and manage containers",
         "level": 2,
         "technologies": {
           "docker": {
