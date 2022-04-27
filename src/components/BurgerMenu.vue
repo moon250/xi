@@ -3,10 +3,10 @@
   <div class="burger-menu__main" v-if="opened" @keydown.esc="closeMenu" tabindex="-1">
     <div class="burger-menu__top">
       <ul class="burger-menu__links">
-        <li @click="scrollTo('about-me')">About me</li>
-        <li @click="scrollTo('skills')">Skills</li>
-        <li @click="scrollTo('projects')">Projects</li>
-        <li @click="scrollTo('contact')">Contact</li>
+        <li @click="scrollTo('about-me')">{{ $t("titles.aboutme") }}</li>
+        <li @click="scrollTo('skills')">{{ $t("titles.skills") }}</li>
+        <li @click="scrollTo('projects')">{{ $t("titles.projects") }}</li>
+        <li @click="scrollTo('contact')">{{ $t("titles.contact") }}</li>
       </ul>
       <div class="burger-menu__actions">
         <Icon name="cross" :icon-class="false" class="burger-menu__close" @click="closeMenu"/>
@@ -24,7 +24,9 @@ import { ref } from "vue";
 import Footer from "./Parts/Footer.vue";
 import ThemeSwitcher from "./ThemeSwitcher.vue";
 import LangSwitcher from "./LangSwitcher.vue";
+import { useI18n } from "vue-i18n";
 
+const { t } = useI18n();
 const opened = ref(false);
 
 function openMenu () {

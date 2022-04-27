@@ -5,12 +5,13 @@ import { en } from "./locales/en.json";
 import { fr } from "./locales/fr.json";
 
 const app = createApp(App);
-const currentLocale = localStorage.hasOwnProperty("lang") ? localStorage.get("lang") : navigator.language.split("-")[0];
+const currentLocale = localStorage.hasOwnProperty("lang") ? localStorage.getItem("lang") : navigator.language.split("-")[0];
 
 app.use(createI18n({
 	locale: currentLocale,
 	fallbackLocale: "en",
-	allowComposition: true,
+	globalInjection: true,
+	legacy: false,
 	messages: {
 		fr, en
 	}

@@ -21,12 +21,10 @@
 
 <script setup>
 import { skills } from "../../content/skills.json";
-import Icon from "../Icon.vue";
 import Dropdown from "../Dropdown.vue";
 import { ref } from "vue";
 
 const openedDropdown = ref("");
-
 const notAnySelected = ref(openedDropdown.value === "");
 
 const isActive = ref((name) => {

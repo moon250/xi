@@ -23,8 +23,10 @@
 <script setup>
 import Icon from "./Icon.vue";
 import Pill from "./Pill.vue";
+import { useI18n } from "vue-i18n";
 
-const props = defineProps({
+const { t } = useI18n();
+defineProps({
   content: {
     type: Object,
     required: true
