@@ -1,6 +1,6 @@
 <template>
   <div class="theme-switcher__container">
-    <input class="theme-switcher__checkbox" type="checkbox" @click="switchTheme">
+    <input class="theme-switcher__checkbox" type="checkbox" @click="switchTheme" :checked="currentMode === 1">
     <Icon name="sun" class="theme-switcher__icon" id="sun"/>
     <Icon name="moon" class="theme-switcher__icon" id="moon"/>
   </div>
@@ -11,6 +11,7 @@ import Icon from "./Icon.vue";
 
 if (!localStorage.hasOwnProperty("theme")) localStorage.setItem("theme", "0");
 
+let currentMode = parseInt(localStorage.getItem("theme"));
 const root = document.documentElement;
 const themes = [
   "light",
@@ -18,7 +19,6 @@ const themes = [
 ];
 
 function switchTheme () {
-  let currentMode = parseInt(localStorage.getItem("theme"));
   currentMode = currentMode + 1 < themes.length ? currentMode + 1 : currentMode - 1;
   localStorage.setItem("theme", currentMode.toString());
 
