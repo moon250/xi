@@ -1,0 +1,33 @@
+@use "../functions" as *;
+
+.stack__icons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+  gap: space(2);
+}
+
+.stack__icon {
+  --icon-color: var(--secondary);
+}
+
+.stack__icons svg {
+  height: 40px;
+  width: 40px;
+}
+
+.stack__icons :not(:first-child) {
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 1.5px;
+    height: 32px;
+
+    background-color: var(--secondary);
+
+    position: absolute;
+    top: 50%;
+    left: -9px;
+    transform: translateY(-50%);
+  }
+}

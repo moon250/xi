@@ -1,0 +1,56 @@
+{
+  "stack": {
+    "html": {
+      "name": "HTML",
+      "level": 3
+    },
+    "css": {
+      "name": "CSS",
+      "level": 2,
+      "technologies": {
+        "sass": {
+          "link": "https://sass-lang.com/"
+        }
+      }
+    },
+    "javascript": {
+      "name": "Javascript",
+      "level": 2,
+      "technologies": {
+        "nodejs": {
+          "link": "https://nodejs.org/"
+        },
+        "vuejs": {
+          "link": "https://vuejs.org/"
+        }
+      }
+    },
+    "php": {
+      "name": "PHP",
+      "level": 3,
+      "technologies": {
+        "laravel": {
+          "link": "https://laravel.com/"
+        }
+      }
+    },
+    "git": {
+      "name": "Git",
+      "level": 3,
+      "technologies": {
+        "git": {
+          "link": "https://git-scm.com/"
+        }
+      }
+    },
+    "docker": {
+      "name": "Docker",
+      "level": 2,
+      "technologies": {
+        "docker": {
+          "link": "https://www.docker.com/"
+        }
+      }
+    }
+  }
+}

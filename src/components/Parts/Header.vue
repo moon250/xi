@@ -3,7 +3,7 @@
     <nav class="links">
       <ul>
         <li @click="scrollTo('about-me')">{{ $t("titles.aboutme") }}</li>
-        <li @click="scrollTo('skills')">{{ $t("titles.skills") }}</li>
+        <li @click="scrollTo('skills')">{{ $t("titles.stack") }}</li>
         <li @click="scrollTo('projects')">{{ $t("titles.projects") }}</li>
       </ul>
       <BurgerMenu/>
