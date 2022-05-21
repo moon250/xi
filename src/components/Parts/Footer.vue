@@ -9,6 +9,5 @@
 </template>
 
 <script setup>
-import Icon from "../Icon.vue";
 import Socials from "../Socials.vue";
 </script>
