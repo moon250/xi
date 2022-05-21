@@ -1,6 +1,6 @@
 <template>
-  <div class="projects__main part" id="projects">
-    <h1>{{ $t("titles.projects") }}</h1>
+  <div class="projects__main part" id="projects" role="region" aria-labelledby="projects__title">
+    <h1 id="projects__title">{{ $t("titles.projects") }}</h1>
     <div class="project__list">
       <div class="project__item" v-for="project in projects">
         <img :src="'/img/' + project.thumbnail" :alt="project.name">

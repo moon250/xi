@@ -1,12 +1,8 @@
 <template>
   <div class="socials">
     <Icon name="discord" @click="copy"/>
-    <a href="https://www.instagram.com/moon250_/" class="icon">
-      <Icon name="instagram"/>
-    </a>
-    <a href="https://www.github.com/moon250" class="icon">
-      <Icon name="github"/>
-    </a>
+    <Icon name="instagram" link="https://www.instagram.com/moon250_/"/>
+    <Icon name="github" link="https://www.github.com/moon250"/>
   </div>
 </template>
 

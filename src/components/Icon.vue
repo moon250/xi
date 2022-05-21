@@ -2,7 +2,7 @@
   <svg :class="props.iconClass ? 'icon' : ''" v-if="props.link.length === 0">
     <use :href="'sprite.svg#' + props.name"></use>
   </svg>
-  <a :href="props.link" v-else :class="props.iconClass ? 'icon' : ''">
+  <a v-else :href="props.link" :class="props.iconClass ? 'icon' : ''" :aria-label="props.name">
     <svg :class="props.iconClass ? 'icon' : ''">
       <use :href="'sprite.svg#' + props.name"></use>
     </svg>
