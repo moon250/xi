@@ -1,0 +1,69 @@
+@use "../functions" as *;
+
+.contact__input {
+  display: flex;
+  flex-direction: column;
+  gap: space(1);
+
+  margin-bottom: space(2);
+  overflow: hidden;
+}
+
+.contact__field {
+  position: relative;
+  outline: none;
+  border: rgba(var(--rgb-secondary), 20%) solid .5px;
+
+  padding: space(1);
+  height: 32px;
+
+  background: inherit;
+  font: inherit;
+  color: inherit;
+
+  &:focus + .focus-border {
+    transform: translateX(0);
+  }
+
+  &#message {
+    height: 135px;
+    overflow-y: scroll;
+    resize: none;
+  }
+}
+
+.focus-border {
+  display: block;
+  height: 2px;
+  transition: transform .2s;
+  background-color: var(--secondary);
+  transform: translateX(-100%);
+}
+
+.contact__field-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__button {
+  cursor: pointer;
+  outline: none;
+  background-color: inherit;
+
+  color: inherit;
+  font: inherit;
+  font-size: 14px;
+
+  border: rgba(var(--rgb-secondary), 20%) solid 1px;
+  border-radius: 4px;
+
+  padding: space(.75) space(2.5);
+  align-self: flex-end;
+
+  transition: all .2s;
+
+  &:hover {
+    background-color: var(--secondary);
+    color: var(--primary);
+  }
+}

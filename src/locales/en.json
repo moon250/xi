@@ -4,7 +4,7 @@
       "aboutme": "About me",
       "stack": "My stack",
       "projects": "Projects",
-      "contact": "Contact"
+      "contact": "Contact me"
     },
     "descriptions": {
       "me": "Hi\uD83D\uDC4B\uD83C\uDFFC ! I am Robin, AKA moon250. I am a {0}-year-old highschool student whose hobbies are web development and anything that revolves around computers in general. Therefore, I hope I'll study computer science in the future",
@@ -15,7 +15,11 @@
       "level": "Level",
       "technos": "Technologies I use",
       "copyright": "© moon250, 2022 - All rights reserved.",
-      "madebyme": "Made with❤️by moon250"
+      "madebyme": "Made with❤️by moon250",
+      "name": "Your name",
+      "email": "Your email (to answer you)",
+      "message": "Your message",
+      "send": "Submit"
     }
   }
 }

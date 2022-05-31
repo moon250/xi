@@ -4,6 +4,7 @@
   <AboutMe/>
   <Skills/>
   <Projects/>
+  <Contact/>
   <Footer/>
 </template>
 <script setup>
@@ -13,8 +14,9 @@ import AboutMe from "./components/Parts/AboutMe.vue";
 import Skills from "./components/Parts/Stack.vue";
 import Projects from "./components/Parts/Projects.vue";
 import Logo from "./components/Parts/Logo.vue";
+import Contact from "./components/Parts/Contact.vue";
 
-let currentMode = parseInt(localStorage.getItem("theme"));
+const currentMode = parseInt(localStorage.getItem("theme"));
 const root = document.documentElement;
 
 if (currentMode === 0) {

@@ -4,7 +4,7 @@
       "aboutme": "A propos",
       "stack": "Ma stack",
       "projects": "Projets",
-      "contact": "Contact"
+      "contact": "Me Contacter"
     },
     "descriptions": {
       "me": "Bonjour\uD83D\uDC4B\uD83C\uDFFC ! Je m'appelle Robin, alias moon250. Je suis un lycéen de {0} ans qui adore le développement web et ce qui a un rapport avec l'informatique en général. J'aimerais donc travailler dans ce domaine plus tard.",
@@ -15,7 +15,11 @@
       "level": "Niveau",
       "technos": "Technologies que j'utilise",
       "copyright": "© moon250, 2022 - Tous droits réservés.",
-      "madebyme": "Fait avec❤️par moon250"
+      "madebyme": "Fait avec❤️par moon250",
+      "name": "Votre nom",
+      "email": "Votre email (pour vous répondre)",
+      "message": "Votre message",
+      "send": "Envoyer"
     }
   }
 }
