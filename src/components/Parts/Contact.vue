@@ -18,7 +18,7 @@
       </div>
       <div class="contact__input">
         <label for="message">{{ $t("texts.message") }}</label>
-        <textarea name="message" id="message" class="contact__field" required>Heyyo</textarea>
+        <textarea name="message" id="message" class="contact__field" required></textarea>
       </div>
 
       <button type="submit" class="contact__button">{{ $t("texts.send") }}</button>

@@ -34,8 +34,8 @@
 
 .focus-border {
   display: block;
-  height: 2px;
-  transition: transform .2s;
+  height: 1.5px;
+  transition: transform .15s;
   background-color: var(--secondary);
   transform: translateX(-100%);
 }
@@ -60,7 +60,7 @@
   padding: space(.75) space(2.5);
   align-self: flex-end;
 
-  transition: all .2s;
+  transition: all .15s;
 
   &:hover {
     background-color: var(--secondary);
