@@ -6,15 +6,44 @@
 @import "functions";
 
 :root {
-  --light: #F9F9F9;
+  --light: #FAFAFA;
+  --light-hover: #E6E6E6;
+  --light-border: #FAFAFA20;
+
   --dark: #191A20;
+  --dark-hover: #3D4051;
+  --dark-border: #191A2020;
+
+  --accent: #FFC858;
+  --accent-hover: #FFAF0B;
+  --accent-border: #FFAC0020;
+
+  --danger: #C41E1E;
+  --danger-hover: #A82323;
+  --danger-border: #C41E1E20;
+
   --rgb-light: 249, 249, 249;
   --rgb-dark: 25, 26, 32;
+
   --primary: var(--light);
+  --primary-hover: var(--light-hover);
+  --primary-border: var(--light-border);
   --secondary: var(--dark);
+  --secondary-hover: var(--dark-hover);
+  --secondary-border: var(--dark-border);
+
   --rgb-primary: var(--rgb-light);
   --rgb-secondary: var(--rgb-dark);
   --space: 8px;
+}
+
+html.dark {
+  --primary: var(--dark);
+  --primary-hover: var(--dark-hover);
+  --primary-border: var(--dark-border);
+  --secondary: var(--light);
+  --secondary-hover: var(--light-hover);
+  --secondary-border: var(--light-border);
 }
 
 body {

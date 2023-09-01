@@ -4,18 +4,18 @@
       "aboutme": "A propos",
       "stack": "Ma stack",
       "projects": "Projets",
-      "contact": "Me Contacter"
+      "contact": "Me contacter"
     },
     "descriptions": {
       "me": "Bonjour\uD83D\uDC4B\uD83C\uDFFC ! Je m'appelle Robin, alias moon250. Je suis un lycéen de {0} ans qui adore le développement web et ce qui a un rapport avec l'informatique en général. J'aimerais donc travailler dans ce domaine plus tard.",
-      "monody": "Monody est un jeu de loup-garous en ligne en cours de développement.",
+      "monody": "Monody est un jeu du loup-garou en ligne.",
       "portfolio": "C'est mon propre portfolio, que j'ai designé et développé. C'est le site sur lequel vous êtes actuellement."
     },
     "texts": {
       "level": "Niveau",
       "technos": "Technologies que j'utilise",
-      "copyright": "© moon250, 2022 - Tous droits réservés.",
-      "madebyme": "Fait avec❤️par moon250",
+      "copyright": "© moon250, 2023 — Tous droits réservés.",
+      "madebyme": "Fait avec ❤️ par moon250",
       "name": "Votre nom",
       "email": "Votre email (pour vous répondre)",
       "message": "Votre message",

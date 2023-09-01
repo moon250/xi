@@ -4,7 +4,6 @@
     <div class="burger-menu__top">
       <ul class="burger-menu__links">
         <li @click="scrollTo('about-me')">{{ $t("titles.aboutme") }}</li>
-        <li @click="scrollTo('skills')">{{ $t("titles.stack") }}</li>
         <li @click="scrollTo('projects')">{{ $t("titles.projects") }}</li>
         <li @click="scrollTo('contact')">{{ $t("titles.contact") }}</li>
       </ul>
