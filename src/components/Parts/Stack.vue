@@ -1,5 +1,10 @@
 <template>
-  <div class="stack__main part" id="stack" role="region" aria-labelledby="stack__title">
+  <div
+    class="stack__main part"
+    id="stack"
+    role="region"
+    aria-labelledby="stack__title"
+  >
     <h1 id="stack__title">{{ $t("titles.stack") }}</h1>
     <div class="stack__icons">
       <svg v-for="(language, rawName) in stack">

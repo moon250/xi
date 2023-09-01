@@ -12,7 +12,7 @@
 .contact__field {
   position: relative;
   outline: none;
-  border: rgba(var(--rgb-secondary), 20%) solid .5px;
+  border: rgba(var(--rgb-secondary), 20%) solid 0.5px;
 
   padding: space(1);
   height: 32px;
@@ -35,7 +35,7 @@
 .focus-border {
   display: block;
   height: 1.5px;
-  transition: transform .15s;
+  transition: transform 0.15s;
   background-color: var(--secondary);
   transform: translateX(-100%);
 }
@@ -57,10 +57,10 @@
   border: rgba(var(--rgb-secondary), 20%) solid 1px;
   border-radius: 4px;
 
-  padding: space(.75) space(2.5);
+  padding: space(0.75) space(2.5);
   align-self: flex-end;
 
-  transition: all .15s;
+  transition: all 0.15s;
 
   &:hover {
     background-color: var(--secondary);

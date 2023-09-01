@@ -2,7 +2,12 @@
   <svg :class="props.iconClass ? 'icon' : ''" v-if="props.link.length === 0">
     <use :href="'sprite.svg#' + props.name"></use>
   </svg>
-  <a v-else :href="props.link" :class="props.iconClass ? 'icon' : ''" :aria-label="props.name">
+  <a
+    v-else
+    :href="props.link"
+    :class="props.iconClass ? 'icon' : ''"
+    :aria-label="props.name"
+  >
     <svg :class="props.iconClass ? 'icon' : ''">
       <use :href="'sprite.svg#' + props.name"></use>
     </svg>
@@ -13,21 +18,21 @@
 const props = defineProps({
   name: {
     type: String,
-    required: true
+    required: true,
   },
   "icon-class": {
     type: Boolean,
     required: false,
-    default () {
+    default() {
       return true;
-    }
+    },
   },
   link: {
     type: String,
     required: false,
-    default () {
+    default() {
       return "";
-    }
-  }
+    },
+  },
 });
 </script>

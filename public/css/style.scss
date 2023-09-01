@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -6,21 +8,21 @@
 @import "functions";
 
 :root {
-  --light: #FAFAFA;
-  --light-hover: #E6E6E6;
-  --light-border: #FAFAFA20;
+  --light: #fafafa;
+  --light-hover: #e6e6e6;
+  --light-border: #fafafa20;
 
-  --dark: #191A20;
-  --dark-hover: #3D4051;
-  --dark-border: #191A2020;
+  --dark: #191a20;
+  --dark-hover: #3d4051;
+  --dark-border: #191a2020;
 
-  --accent: #FFC858;
-  --accent-hover: #FFAF0B;
-  --accent-border: #FFAC0020;
+  --accent: #ffc858;
+  --accent-hover: #ffaf0b;
+  --accent-border: #ffac0020;
 
-  --danger: #C41E1E;
-  --danger-hover: #A82323;
-  --danger-border: #C41E1E20;
+  --danger: #c41e1e;
+  --danger-hover: #a82323;
+  --danger-border: #c41e1e20;
 
   --rgb-light: 249, 249, 249;
   --rgb-dark: 25, 26, 32;

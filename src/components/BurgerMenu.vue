@@ -1,6 +1,16 @@
 <template>
-  <Icon name="menu" :icon-class="false" class="burger-menu__icon" @click="openMenu"/>
-  <div class="burger-menu__main" v-if="opened" @keydown.esc="closeMenu" tabindex="-1">
+  <Icon
+    name="menu"
+    :icon-class="false"
+    class="burger-menu__icon"
+    @click="openMenu"
+  />
+  <div
+    class="burger-menu__main"
+    v-if="opened"
+    @keydown.esc="closeMenu"
+    tabindex="-1"
+  >
     <div class="burger-menu__top">
       <ul class="burger-menu__links">
         <li @click="scrollTo('about-me')">{{ $t("titles.aboutme") }}</li>
@@ -8,12 +18,17 @@
         <li @click="scrollTo('contact')">{{ $t("titles.contact") }}</li>
       </ul>
       <div class="burger-menu__actions">
-        <Icon name="cross" :icon-class="false" class="burger-menu__close" @click="closeMenu"/>
-        <ThemeSwitcher/>
-        <LangSwitcher/>
+        <Icon
+          name="cross"
+          :icon-class="false"
+          class="burger-menu__close"
+          @click="closeMenu"
+        />
+        <ThemeSwitcher />
+        <LangSwitcher />
       </div>
     </div>
-    <Footer/>
+    <Footer />
   </div>
 </template>
 
@@ -28,22 +43,22 @@ import { useI18n } from "vue-i18n";
 const { t } = useI18n();
 const opened = ref(false);
 
-function openMenu () {
+function openMenu() {
   opened.value = true;
   document.body.style.overflow = "hidden";
 }
 
-function closeMenu () {
+function closeMenu() {
   opened.value = false;
   document.body.style.overflow = "";
 }
 
-function scrollTo (part) {
+function scrollTo(part) {
   closeMenu();
   part = document.querySelector(`#${part}`);
   part.scrollIntoView({
     behavior: "smooth",
-    inline: "nearest"
+    inline: "nearest",
   });
 }
 </script>

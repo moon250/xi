@@ -2,7 +2,7 @@
   <footer>
     <div>
       <p>{{ $t("texts.madebyme") }}</p>
-      <Socials/>
+      <Socials />
     </div>
     <p>{{ $t("texts.copyright") }}</p>
   </footer>

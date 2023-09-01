@@ -6,7 +6,7 @@
         <li @click="scrollTo('skills')">{{ $t("titles.stack") }}</li>
         <li @click="scrollTo('projects')">{{ $t("titles.projects") }}</li>
       </ul>
-      <BurgerMenu/>
+      <BurgerMenu />
     </nav>
   </header>
 </template>
@@ -14,11 +14,11 @@
 <script setup>
 import BurgerMenu from "../BurgerMenu.vue";
 
-function scrollTo (part) {
+function scrollTo(part) {
   part = document.querySelector(`#${part}`);
   part.scrollIntoView({
     behavior: "smooth",
-    inline: "nearest"
+    inline: "nearest",
   });
 }
 </script>
