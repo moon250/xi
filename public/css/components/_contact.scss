@@ -12,7 +12,7 @@
 .contact__field {
   position: relative;
   outline: none;
-  border: rgba(var(--rgb-secondary), 20%) solid 0.5px;
+  border: var(--secondary-border) solid 0.5px;
 
   padding: space(1);
   height: 32px;
@@ -54,7 +54,7 @@
   font: inherit;
   font-size: 14px;
 
-  border: rgba(var(--rgb-secondary), 20%) solid 1px;
+  border: var(--secondary-border) solid 1px;
   border-radius: 4px;
 
   padding: space(0.75) space(2.5);
