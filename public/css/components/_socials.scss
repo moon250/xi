@@ -1,11 +1,14 @@
 @use "../functions" as *;
 
+.logo__main .socials {
+  margin-right: space(2);
+}
+
 .socials {
   display: flex;
   justify-content: space-between;
   align-items: center;
   align-self: flex-end;
-  margin-right: space(2);
   gap: space(1);
 
   & > a:last-child svg {

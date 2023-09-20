@@ -53,7 +53,7 @@
 .burger-menu__actions {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 8px;
+  gap: space(3);
   justify-items: end;
   margin-top: space(3);
   margin-right: space(3);
