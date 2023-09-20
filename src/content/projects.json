@@ -5,10 +5,10 @@
       "thumbnail": "monody.png",
       "description": "descriptions.monody"
     },
-    "portfolio": {
-      "name": "Portfolio",
-      "thumbnail": "portfolio.png",
-      "description": "descriptions.portfolio"
+    "xi": {
+      "name": "xi",
+      "thumbnail": "xi.png",
+      "description": "descriptions.xi"
     }
   }
 }

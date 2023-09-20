@@ -1,6 +1,6 @@
 services:
-  portfolio:
-    container_name: portfolio
+  xi:
+    container_name: xi
     build: .
     ports:
       - "80:5173"
