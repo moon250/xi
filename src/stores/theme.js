@@ -3,14 +3,15 @@ import { ref } from "vue";
 
 export const useThemeStore = defineStore("theme-store", () => {
   const currentTheme = ref("dark");
-  if (
-    window.matchMedia("(prefers-color-scheme: dark)") === false ||
-    window.matchMedia("(prefers-color-scheme: dark)").matches === false
-  ) {
-    currentTheme.value = "light";
-  } else {
-    currentTheme.value = "dark";
-  }
+
+  currentTheme.value = window.matchMedia("(prefers-color-scheme: dark)").matches
+    ? "dark"
+    : "light";
+
+  document.documentElement.classList.add(currentTheme.value);
+  document.documentElement.classList.remove(
+    currentTheme.value === "light" ? "dark" : "light",
+  );
 
   return { currentTheme };
 });

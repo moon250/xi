@@ -1,7 +1,7 @@
 <template>
   <main class="logo__main">
     <Name />
-        <Socials />
+    <Socials />
   </main>
 </template>
 

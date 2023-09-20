@@ -13,7 +13,6 @@
 
 <script setup>
 import Icon from "./Icon.vue";
-import { ref } from "vue";
 import { useThemeStore } from "../stores/theme";
 
 const store = useThemeStore();
