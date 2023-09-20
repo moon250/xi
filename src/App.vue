@@ -1,6 +1,6 @@
 <template>
   <Header />
-  <Logo />
+  <Title />
   <AboutMe />
   <Projects />
   <Contact />
@@ -11,7 +11,7 @@ import Footer from "./components/Parts/Footer.vue";
 import Header from "./components/Parts/Header.vue";
 import AboutMe from "./components/Parts/AboutMe.vue";
 import Projects from "./components/Parts/Projects.vue";
-import Logo from "./components/Parts/Logo.vue";
+import Title from "./components/Parts/Title.vue";
 import Contact from "./components/Parts/Contact.vue";
 import { useThemeStore } from "./stores/theme";
 
