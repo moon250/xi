@@ -1,0 +1,24 @@
+.about-me__highlight {
+  position: relative;
+  color: var(--dark);
+  margin-inline: 3px;
+
+  &::before {
+    content: "";
+    display: block;
+    background: var(--accent);
+
+    position: absolute;
+    top: 0;
+    left: -2px;
+    transition: all 0.1s;
+    z-index: -1;
+
+    height: calc(100% + 2px);
+    width: calc(100% + 4px);
+  }
+
+  &:hover::before {
+    box-shadow: -3px 3px 0 0 var(--dark);
+  }
+}

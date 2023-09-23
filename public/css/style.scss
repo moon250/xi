@@ -57,17 +57,19 @@ body {
 @import "typography";
 @import "utilites";
 
+@import "components/parts/header";
+@import "components/parts/footer";
+@import "components/parts/projects";
+@import "components/parts/about-me";
+@import "components/parts/stack";
+@import "components/parts/contact";
+
 @import "components/container";
-@import "components/header";
-@import "components/footer";
 @import "components/icons";
 @import "components/logo";
-@import "components/projects";
-@import "components/stack";
 @import "components/dropdown";
 @import "components/pill";
 @import "components/socials";
 @import "components/burger";
 @import "components/lang-switcher";
 @import "components/theme-switcher";
-@import "components/contact";

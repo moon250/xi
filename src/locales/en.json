@@ -7,7 +7,7 @@
       "contact": "Contact me"
     },
     "descriptions": {
-      "me": "Hi\uD83D\uDC4B\uD83C\uDFFC ! I am Robin, AKA moon250. I am a {0}-year-old highschool student whose hobbies are web development and anything that revolves around computers in general. Therefore, I hope I'll study computer science in the future",
+      "me": "Hi\uD83D\uDC4B\uD83C\uDFFC ! I am <span class=\"about-me__highlight\">Robin</span>, AKA moon250. I am a {0}-year-old highschool student whose hobbies are web development and anything that revolves around computers in general. Therefore, I hope I'll study computer science in the future",
       "monody": "Monody is an online werewolf game in development.",
       "xi": "This is my own portfolio, that I have designed and created. It's the current website you are on."
     },

@@ -6,7 +6,7 @@
     aria-labelledby="about-me__title"
   >
     <h1 id="about-me__title">{{ $t("titles.aboutme") }}</h1>
-    <p>{{ $t("descriptions.me", [age]) }}</p>
+    <p v-html="$t('descriptions.me', [age])" />
   </div>
 </template>
 
