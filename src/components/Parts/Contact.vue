@@ -21,8 +21,9 @@
             type="email"
             name="email"
             id="email"
+            v-model="email"
             class="contact__field"
-            data-errorable="true"
+            :data-errorable="email !== ''"
             required
           />
         </div>
@@ -44,4 +45,8 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import { ref } from "vue";
+
+const email = ref("");
+</script>
