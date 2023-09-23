@@ -74,6 +74,8 @@
   border: 0.5px solid var(--secondary-border);
   border-radius: 2px;
   transition: opacity 0.2s;
+
+  box-shadow: -4px 4px var(--secondary);
 }
 
 .project__list {
