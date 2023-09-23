@@ -10,5 +10,5 @@
 </template>
 
 <script setup>
-import Icon from "./Icon.vue";
+import Icon from "./Svg/Icon.vue";
 </script>

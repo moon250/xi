@@ -1,15 +1,15 @@
 <template>
   <svg class="name__svg title-font" viewBox="0 0 300 120">
-    <text id="transparent" x="150" y="67">Robin</text>
+    <text id="transparent" x="150" y="60">Robin</text>
 
     <g>
-      <text id="left_fragment" x="150" y="67" mask="url(#left_mask)">
+      <text id="left_fragment" x="150" y="60" mask="url(#left_mask)">
         Robin
       </text>
-      <text id="right_fragment" x="150" y="67" mask="url(#right_mask)">
+      <text id="right_fragment" x="150" y="60" mask="url(#right_mask)">
         Robin
       </text>
-      <text id="base_text" x="150" y="67" mask="url(#right_mask_inverted)">
+      <text id="base_text" x="150" y="60" mask="url(#right_mask_inverted)">
         Robin
       </text>
     </g>
@@ -39,14 +39,14 @@
   fill: var(--secondary);
   font-size: 96px;
   text-anchor: middle;
-  dominant-baseline: middle;
+  dominant-baseline: central;
 
   text {
     stroke: var(--secondary);
     stroke-width: 2px;
     stroke-dasharray: 6;
     stroke-dashoffset: 0;
-    animation: contour 6s linear infinite;
+    animation: contour 4s linear infinite;
   }
 
   #transparent {
@@ -79,7 +79,7 @@
 
 @keyframes contour {
   to {
-    stroke-dashoffset: 12.3;
+    stroke-dashoffset: 12;
   }
 }
 </style>

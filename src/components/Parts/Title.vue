@@ -7,5 +7,5 @@
 
 <script setup>
 import Socials from "../Socials.vue";
-import Name from "../Name.vue";
+import Name from "../Svg/Name.vue";
 </script>

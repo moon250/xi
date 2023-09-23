@@ -12,7 +12,7 @@
 </template>
 
 <script setup>
-import Icon from "./Icon.vue";
+import Icon from "./Svg/Icon.vue";
 import { useThemeStore } from "../stores/theme";
 
 const store = useThemeStore();

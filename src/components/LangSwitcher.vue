@@ -8,7 +8,7 @@
 </template>
 
 <script setup>
-import Icon from "./Icon.vue";
+import Icon from "./Svg/Icon.vue";
 import { ref } from "vue";
 import { useI18n } from "vue-i18n";
 
