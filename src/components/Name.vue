@@ -51,6 +51,7 @@
 
   #transparent {
     fill: transparent;
+    stroke: none;
   }
 
   #base_text {
