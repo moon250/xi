@@ -1,7 +1,7 @@
 <template>
   <div class="contact__main part" aria-labelledby="contact__title">
     <h1 id="contact__title">{{ $t("titles.contact") }}</h1>
-    <form method="get" action="#">
+    <form method="get" action="#" class="contact__form">
       <div class="contact__input">
         <label for="username">{{ $t("texts.name") }}</label>
         <div class="contact__field-group">
@@ -12,7 +12,6 @@
             class="contact__field"
             required
           />
-          <span class="focus-border"></span>
         </div>
       </div>
       <div class="contact__input">
@@ -23,9 +22,9 @@
             name="email"
             id="email"
             class="contact__field"
+            data-errorable="true"
             required
           />
-          <span class="focus-border"></span>
         </div>
       </div>
       <div class="contact__input">

@@ -1,18 +1,16 @@
 @use "../functions" as *;
 
 .contact__input {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: space(1);
 
   margin-bottom: space(2);
-  overflow: hidden;
 }
 
 .contact__field {
   position: relative;
   outline: none;
-  border: var(--secondary-border) solid 0.5px;
+  border: var(--secondary-border) solid 2px;
 
   padding: space(1);
   height: 32px;
@@ -21,49 +19,53 @@
   font: inherit;
   color: inherit;
 
-  &:focus + .focus-border {
-    transform: translateX(0);
-  }
+  transition: all 0.15s;
 
   &#message {
     height: 135px;
     overflow-y: scroll;
     resize: none;
   }
-}
 
-.focus-border {
-  display: block;
-  height: 1.5px;
-  transition: transform 0.15s;
-  background-color: var(--secondary);
-  transform: translateX(-100%);
+  &:focus {
+    box-shadow: -3px 3px var(--secondary);
+    border: var(--secondary) solid 2px;
+  }
+
+  &[data-errorable="true"]:invalid {
+    box-shadow: -3px 3px var(--danger);
+    border: var(--danger) solid 2px;
+  }
 }
 
 .contact__field-group {
-  display: flex;
-  flex-direction: column;
+  display: grid;
 }
 
 .contact__button {
   cursor: pointer;
   outline: none;
   background-color: inherit;
+  transition: all 0.15s;
 
   color: inherit;
   font: inherit;
   font-size: 14px;
 
-  border: var(--secondary-border) solid 1px;
-  border-radius: 4px;
+  border: var(--secondary-border) solid 2px;
+  padding-block: space(1.25);
 
-  padding: space(0.75) space(2.5);
   align-self: flex-end;
 
-  transition: all 0.15s;
-
   &:hover {
-    background-color: var(--secondary);
-    color: var(--primary);
+    box-shadow: -4px 4px var(--secondary);
+    background-color: var(--accent);
+    color: var(--dark);
+    border: var(--dark) solid 2px;
   }
+}
+
+.contact__form {
+  display: grid;
+  grid-template-columns: 1fr;
 }
